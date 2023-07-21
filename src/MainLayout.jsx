@@ -1,13 +1,5 @@
-import { MovieList } from './MovieList';
-import { WatchedMovieList } from './WatchedMovieList';
-
-const MainLayout = () => {
-  return (
-    <main className="main">
-      <MovieList />
-      <WatchedMovieList />
-    </main>
-  );
+const MainLayout = ({ children }) => {
+  return <main className="main">{children}</main>;
 };
 
 export { MainLayout };
